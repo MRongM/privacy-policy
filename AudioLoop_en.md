@@ -4,7 +4,7 @@ Effective Date: [Insert Date]
 
 1. Introduction
 
-[Your App Name] ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application ("App"). By using the App, you agree to the terms of this Privacy Policy.
+[AudioLoop] ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our mobile application ("App"). By using the App, you agree to the terms of this Privacy Policy.
 
 2. Information We Collect
 
@@ -64,7 +64,7 @@ We may update this Privacy Policy from time to time. We encourage you to review 
 
 If you have any questions or concerns about this Privacy Policy, please contact us at:
 
-[Your Company Name][Your Email Address][Your Address]
+[jiangisright@gmail.com]
 
-Thank you for trusting [Your App Name].
+Thank you for trusting [AudioLoop].
 
