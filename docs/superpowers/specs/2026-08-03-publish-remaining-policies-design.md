@@ -56,7 +56,7 @@ AudioLoop HTML follows the existing Markdown meaning and only resolves placehold
 
 MergeLong remains explicitly labeled `Terms & Conditions`, not Privacy Policy, and retains its existing effective date of 2024-09-28.
 
-Pages use semantic headings and sections, meaningful metadata, canonical URLs, language navigation where applicable, visible keyboard focus, mobile-friendly layout, and a route back to the site index.
+Pages use semantic headings and sections, meaningful metadata, canonical URLs, language navigation where applicable, visible keyboard focus, and a mobile-friendly layout. Every application directory is a standalone publication boundary: application pages may link to languages and compatibility pages inside the same application, email contacts, and required external policies, but must not link back to the site-wide policy index or to another application. The root index remains a one-way discovery surface that can link into each application. Shared CSS is an implementation asset and does not weaken the navigation boundary.
 
 ## Data Flow and Failure Handling
 
@@ -71,6 +71,8 @@ Implementation follows a red-green cycle:
 3. Add the minimum static files and index/README changes needed to pass.
 4. Run both the new site-wide validator and the existing Hobgoblin validator.
 5. Scan all published HTML for unfinished placeholders and validate local links.
+
+The validator rejects application-page anchors that traverse to a parent directory, absolute anchors into this site's application routes, and the labels `all-policies` or `全部政策`. This enforces the standalone boundary for Timekeeper, Hobgoblin, AudioLoop, MergeLong, and future pages added inside those directories.
 
 No browser runtime test framework is introduced because the pages have no interactive behavior; deterministic shell validation is sufficient for the current static architecture.
 

@@ -32,6 +32,7 @@ for name in "${required_pages[@]}"; do
     rg -q 'jiangisright@gmail\.com' "$page" || fail "$name does not include the privacy contact"
     rg -q '2026-08-03' "$page" || fail "$name does not include the effective date"
     rg -qi 'collect|收集' "$page" || fail "$name does not cover data collection"
+    rg -qi 'shar|分享' "$page" || fail "$name does not cover data sharing"
     rg -qi 'retention|保留' "$page" || fail "$name does not cover retention"
     rg -qi 'delet|删除' "$page" || fail "$name does not cover deletion"
 

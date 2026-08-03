@@ -65,6 +65,13 @@ for page in "$DOCS_ROOT"/hobgoblin/*.html "$DOCS_ROOT"/audioloop/*.html "$DOCS_R
     require_text "$page" 'href="../privacy.css"'
 done
 
+app_directories=(timekeeper hobgoblin audioloop mergelong)
+for app_directory in "${app_directories[@]}"; do
+    for page in "$DOCS_ROOT/$app_directory"/*.html; do
+        reject_pattern "$page" '<a[^>]+href="\.\./|<a[^>]+href="https://privacy-policy\.328064\.xyz/(timekeeper|hobgoblin|audioloop|mergelong)/|all-policies|全部政策'
+    done
+done
+
 require_text "$DOCS_ROOT/audioloop/index.html" "href=\"$BASE_URL/audioloop/\""
 require_text "$DOCS_ROOT/audioloop/index.html" '2025-03-01'
 require_text "$DOCS_ROOT/audioloop/index.html" 'jiangisright@gmail.com'
