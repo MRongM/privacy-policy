@@ -14,64 +14,70 @@
       <header>
         <div class="mark"><span class="time-mark" aria-hidden="true">00:00</span> Hourly Chime · MRongM</div>
         <h1>Privacy policy</h1>
-        <p class="summary">Hourly Chime announces the time using Android system services. It has no app account, advertising, analytics, or MRongM-operated backend.</p>
+        <p class="summary">Hourly Chime is free, with no advertising, in-app purchases, app account, analytics, or MRongM-operated backend. Optional holiday downloads connect directly to external data providers.</p>
         <nav aria-label="Policy language">
           <a href="./" aria-current="page">English</a>
           <a href="zh-cn.html" lang="zh-Hans">简体中文</a>
         </nav>
       </header>
       <main id="policy">
-        <p class="meta"><strong>Effective date:</strong> 2026-08-03 · <strong>Developer:</strong> MRongM</p>
+        <p class="meta"><strong>Effective date:</strong> 2026-08-03 · <strong>Last updated:</strong> 2026-10-09 · <strong>Developer:</strong> MRongM</p>
 
         <section>
           <h2>1. Scope</h2>
-          <p>This policy applies to the Hourly Chime Android application, also shown as 整点报时 in Simplified Chinese, published by MRongM. It does not control Android, your device manufacturer, or the text-to-speech engine installed on your device.</p>
+          <p>This policy applies to the Hourly Chime Android application (Timekeeper), also shown as 整点报时 in Simplified Chinese, published by MRongM. This update describes versions that include optional holiday information downloads and reminders; earlier versions without this feature do not make holiday API requests. It does not control Android, your device manufacturer, your browser, or the text-to-speech engine installed on your device.</p>
         </section>
 
         <section>
-          <h2>2. Data MRongM does not collect</h2>
-          <p>Hourly Chime does not declare Android's Internet permission and includes no advertising, analytics, crash-reporting, account, or cloud-storage SDK. The app does not transmit personal data, device data, usage data, advertising identifiers, or app settings to MRongM or a third-party server. MRongM therefore does not sell or share user data received from the app.</p>
+          <h2>2. Data access and collection</h2>
+          <p>The app does not request microphone, camera, contacts, personal calendar, or device-location permissions. It does not record audio or read your personal calendar. It contains no advertising, analytics, crash-reporting, account, or cloud-storage SDK, and its holiday requests do not send advertising identifiers or persistent device identifiers.</p>
+          <p>Local settings are not uploaded to MRongM, which operates no app backend receiving holiday requests. The app declares Internet and network-state access for optional holiday downloads. Those direct connections expose limited request information to external providers as described in section 5; this is not a claim that no information ever leaves your device.</p>
         </section>
 
         <section>
           <h2>3. Information stored on your device</h2>
-          <p>To provide the settings you choose, the app stores whether hourly chimes are enabled, the 12- or 24-hour format, the selected time zone, quiet-hour settings, and the selected app language in private app storage. These values are processed only on your device and are not personal information collected by MRongM.</p>
+          <p>The app keeps your chime switches, 12- or 24-hour format, time zones, quiet hours, language preference, holiday country and subdivision, holiday announcement lead time, and setup completion in private app storage. Unused reminder preferences and allowance records from earlier versions may remain locally. Downloaded annual holiday information, its source, year, and update time are also stored locally. These local records are not uploaded to MRongM.</p>
         </section>
 
         <section>
           <h2>4. Android permissions and system services</h2>
           <ul>
-            <li><strong>Alarms and wake lock:</strong> the app requests exact-alarm access, schedules the next hourly event, and may briefly keep the device awake while a requested announcement plays.</li>
+            <li><strong>Alarms and wake lock:</strong> the app requests exact-alarm access and schedules only the next user-enabled hourly event. Optional holiday information is included in the hourly announcement according to your chosen lead time; there is no separate holiday reminder time. A wake lock is used only during speech.</li>
             <li><strong>Restart and time changes:</strong> Android notifies the app after a normal restart, app update, or system time or time-zone change so it can restore the next chime.</li>
             <li><strong>Notifications and foreground playback:</strong> a notification is shown only while the short audio announcement service is active. Notification visibility is controlled by Android settings.</li>
-            <li><strong>Text to speech:</strong> the current-time phrase and selected language are provided to the Android text-to-speech engine chosen on your device. The app checks for an installed offline voice and does not record audio or request microphone access. The TTS provider is a separate system component governed by its own terms and privacy practices.</li>
-            <li><strong>Audio settings:</strong> the app requests alarm audio focus and checks alarm volume so it can report playback problems. It does not store or transmit your other audio activity.</li>
+            <li><strong>Text to speech:</strong> announcement text and the selected speech language are provided to the Android text-to-speech engine chosen on your device. The app selects an installed voice reported as offline-capable and does not record audio or request microphone access. Voice-data installation and the engine's own behavior are governed by its provider's terms and privacy practices.</li>
+            <li><strong>Audio settings:</strong> the app uses system media volume, media output, and audio focus so it can play speech and report playback problems. It does not store or transmit your other audio activity.</li>
           </ul>
         </section>
 
         <section>
           <h2>5. Sharing and third parties</h2>
-          <p>MRongM does not receive or share data from Hourly Chime. Android and your selected system TTS engine process the limited information described above to perform actions on your device. Your operating-system and TTS providers may have their own privacy policies, which MRongM does not control.</p>
+          <p>Holiday reminders are off by default. Enabling them or manually syncing holiday information first reuses valid annual data already stored for the selected country. Missing or invalid years are downloaded directly over HTTPS from Nager.Holidays at <code>nagerholidays.com</code>, including for mainland China; see its <a href="https://nagerholidays.com/legal/privacy">privacy policy</a>. Holiday names are in English, and coverage can be incomplete. China data does not provide the complete holiday-break and make-up working-day schedule. Local official announcements take precedence.</p>
+          <p>The request specifies the year and the country code you selected. Choosing a holiday country does not provide your actual location. Subdivision, reminder time zone, quiet hours, speech settings, and announcement lead time are not sent as holiday API parameters. Requests use the fixed <code>Timekeeper/1.0</code> User-Agent.</p>
+          <p>The provider and its hosting or security services can receive your connection's IP address and request metadata, including the path and time of the request. Nager's website policy describes Cloudflare security processing of technical data. We have not obtained API-specific guarantees about all recipients, IP anonymization, retention periods, or deletion procedures, and do not promise that requests are unlogged or processed only temporarily. The provider's own policy governs its handling of this information.</p>
+          <p>Enabling holiday reminders queues a background check for the current and next year in your selected holiday time zone. While reminders remain enabled, Android may run a network-constrained job every seven days, including while the app is closed. Background and manual sync reuse successfully cached years and download only missing or invalid annual data; unavailable or failed years may be retried later. Each missing year is requested at most once in a sync. When current-year data is available, outdated cached years for the selected country are removed. Turning reminders off cancels scheduled background checks and retains local settings and data. When both years are cached, sync makes no annual download requests. Cached queries and reminders can operate offline; ordinary time and date announcements do not require holiday downloads.</p>
+          <p>Android and your selected TTS engine process the limited information described in section 4 under their own practices. Opening this policy uses an external browser; the browser and policy website may handle ordinary web connection information. MRongM does not sell data obtained through the app or use the app for advertising or user profiling.</p>
         </section>
 
         <section>
           <h2>6. Retention and deletion</h2>
-          <p>Local settings remain until you change them, clear Hourly Chime storage in Android settings, or uninstall the app. Clearing storage or uninstalling deletes the app's remaining local settings. Android backup is disabled for Hourly Chime. MRongM keeps no server-side Hourly Chime account or user record, so there is no server-side data to request for deletion.</p>
+          <p>Local preferences and annual holiday files remain until updated, cleared in Android app settings, or removed when you uninstall the app. Turning reminders off does not delete them. To remove local data, use <strong>Android Settings → Apps → Hourly Chime → Storage → Clear storage/data</strong>, or uninstall the app. This also resets your settings. Android backup is disabled in the app's configuration.</p>
+          <p>Clearing storage or uninstalling does not delete logs already held by independent holiday, network, browser, or TTS providers. Their retention and deletion processes are outside MRongM's direct control. MRongM has no app account database. You may use the contact below for privacy and deletion enquiries; that contact does not guarantee deletion of third-party logs.</p>
         </section>
 
         <section>
           <h2>7. Security</h2>
-          <p>Hourly Chime minimizes data by keeping its settings in Android private app storage, disabling Android backup, and operating without app network access. No device or software environment can be guaranteed absolutely secure; you are responsible for keeping your device and system services updated and protected.</p>
+          <p>Holiday downloads use HTTPS, and local records are kept in Android private app storage. HTTPS protects transport but does not prevent the receiving provider from reading requests; it is not a claim of separate app-level encryption for local files. No device or software environment can be guaranteed absolutely secure; keep your device and system services updated and protected.</p>
         </section>
 
         <section>
           <h2>8. Children</h2>
-          <p>Hourly Chime is a general time utility and is not directed to children. MRongM does not knowingly collect personal information from children through the app because the app does not transmit user data to MRongM.</p>
+          <p>Hourly Chime is a general time utility and is not directed to children. MRongM does not use it for advertising, profiling, or requesting children's personal information. The optional provider connections described above still apply to any user who uses that feature.</p>
         </section>
 
         <section>
           <h2>9. Changes</h2>
-          <p>This policy may be updated when the app's behavior or legal obligations change. The effective date above will be revised, and material changes will be reflected on this page and in the app or store listing when required.</p>
+          <p>This policy may be updated when the app's behavior or legal obligations change. The effective date records the original policy date; the last-updated date identifies this revision. Material changes will be reflected on this page and in the app or store listing when required.</p>
         </section>
 
         <section>
