@@ -1,0 +1,49 @@
+:root {
+  --canvas: #000;
+  --surface: #171717;
+  --surface-soft: #232323;
+  --text: #f5f5f5;
+  --muted: #c4c4c4;
+  --cyan: #c8dcff;
+  --green: #c8dcff;
+  --rule: #333;
+  --font-display: var(--font-body);
+}
+
+h1 {
+  font-weight: 600;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+
+.power-mark {
+  color: var(--text);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.meta {
+  border-left: 0;
+  border-radius: 1rem;
+}
+
+nav a {
+  border: 1px solid var(--rule);
+  border-radius: 2rem;
+  padding: 0.35rem 0.9rem;
+  text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+  background: var(--surface-soft);
+  border-color: var(--cyan);
+}
+
+p,
+li {
+  overflow-wrap: anywhere;
+}
+
+.redirect-card {
+  margin-top: 2rem;
+}

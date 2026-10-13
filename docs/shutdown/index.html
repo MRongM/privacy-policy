@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="One-tap Shutdown · Privacy policy · MRongM · 2026-10-13" />
+    <title>One-tap Shutdown · Privacy policy</title>
+    <link rel="canonical" href="https://privacy-policy.328064.xyz/shutdown/" />
+    <link rel="alternate" hreflang="en" href="https://privacy-policy.328064.xyz/shutdown/" />
+    <link rel="alternate" hreflang="zh-Hans" href="https://privacy-policy.328064.xyz/shutdown/zh-cn.html" />
+    <link rel="stylesheet" href="../privacy.css" />
+    <link rel="stylesheet" href="privacy.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#policy">Skip to policy</a>
+    <div class="shell">
+      <header>
+        <div class="mark"><span class="power-mark" aria-hidden="true">⏻</span> One-tap Shutdown · MRongM</div>
+        <h1>Privacy policy</h1>
+        <p class="summary">A local Android utility for shutdown and restart. No app account, advertising, analytics, or app-operated server receives your personal data.</p>
+        <nav aria-label="Policy language">
+          <a href="./" aria-current="page">English</a>
+          <a href="zh-cn.html" lang="zh-Hans">简体中文</a>
+        </nav>
+      </header>
+      <main id="policy">
+        <p class="meta"><strong>Effective date and last updated:</strong> 2026-10-13 · <strong>Developer:</strong> MRongM</p>
+
+        <section>
+          <h2>1. Scope and app behavior</h2>
+          <p>This policy applies to <strong>One-tap Shutdown</strong>, also named <strong>一键关机</strong> in Simplified Chinese, published by <strong>MRongM</strong>, with Android package <code>com.mrongm.shutdown</code>. It describes the app’s behavior, local technical information, and the separate processing involved when you use external websites or contact the developer.</p>
+          <p>The app provides shutdown and restart controls. After you authorize it through Shizuku and explicitly choose a power action, the app executes that action immediately through a local service. Your phone’s existing power button and system power menu remain usable.</p>
+        </section>
+
+        <section>
+          <h2>2. Data access, collection, and sharing</h2>
+          <p>The app does not collect, upload, sell, or share personal data through its app functions. It has no app accounts, advertisements, in-app purchases, analytics SDKs, remote crash reporting, or app-operated backend database. It does not access contacts, photos, messages, device location, or advertising identifiers.</p>
+          <p>The app does not request Internet, storage, or accessibility permissions. It checks whether the specific Shizuku package <code>moe.shizuku.privileged.api</code> is installed and reads local authorization and service connection status. This targeted package query is not a scan, collection, or upload of your installed-app inventory.</p>
+          <p>One-tap Shutdown is a paid app distributed through Google Play. Google Play processes the store purchase under its own terms and privacy practices. The app itself does not receive your payment-card number or payment details and has no in-app purchase or payment SDK.</p>
+        </section>
+
+        <section>
+          <h2>3. Local authorization and power commands</h2>
+          <p>Purchasing the app does not grant Android or Shizuku permissions and does not install or activate Shizuku. You still need to complete the separate installation, activation, and authorization steps.</p>
+          <p>Shizuku is a separate app that you install and activate. Shizuku authorization grants privileged local execution as root or Android shell. This app’s implementation uses that capability only for fixed shutdown and restart actions and does not access your contacts, photos, or location. The service checks that it runs as root (UID 0) or Android shell (UID 2000), then executes the fixed shutdown or restart command you selected. The app does not offer arbitrary user-entered commands.</p>
+          <p>On a device without root, Shizuku must be activated again after each device boot, using a computer with ADB or the phone’s wireless debugging feature. Once activation succeeds, the USB connection can be disconnected. Rooted devices can start Shizuku using root. Activation, debugging, and Shizuku’s own permissions are controlled by Android and Shizuku.</p>
+        </section>
+
+        <section>
+          <h2>4. Local information, retention, and deletion</h2>
+          <p>Technical status, the selected power operation, service UID, and error details may appear in local Android diagnostic logs or app error messages. The app does not send these diagnostics to a server or maintain a separate user database. Android manages system-log access, retention, and clearing. Your app-language preference is saved by Android; the app does not upload it.</p>
+          <p>You can revoke this app’s authorization in Shizuku. Uninstalling the app removes its app-local state under Android’s normal app-removal behavior. Android manages system-held preferences and diagnostics. Uninstalling this app does not uninstall Shizuku, revoke permissions granted to other apps, or delete information already held by independent services.</p>
+          <p>There is no app account or server-side app personal database to delete. For deletion requests concerning support emails, see section 7.</p>
+        </section>
+
+        <section>
+          <h2>5. Shizuku, external links, and this policy website</h2>
+          <p>Shizuku has its own behavior, authorization records, and privacy practices. Consult its <a href="https://shizuku.rikka.app/">official website and documentation</a> before installing or activating it. MRongM does not control Shizuku’s independent data handling.</p>
+          <p>The app’s Shizuku download link opens an external browser. Opening a download site or this policy page lets that browser, website, and hosting services process ordinary web connection information, such as IP address, request path, and request time, under their own practices. This policy website is hosted using GitHub Pages. Website hosting logs are separate from app telemetry; the app itself does not upload diagnostic logs or personal data to this website.</p>
+          <p>The app does not embed a browser or add tracking parameters to its download link. External browser, Android, Shizuku, and hosting behavior is governed by the respective provider.</p>
+        </section>
+
+        <section>
+          <h2>6. Security</h2>
+          <p>Power actions remain on your device and require Shizuku authorization. Because these actions can immediately shut down or restart the phone, use them only when you intend to do so, and keep Android and Shizuku updated. Local diagnostic information is subject to Android’s protections. No device or software environment can be guaranteed absolutely secure.</p>
+        </section>
+
+        <section>
+          <h2>7. Contact and support correspondence</h2>
+          <p>The developer responsible for this app is <strong>MRongM</strong>. For privacy questions or requests, email <a href="mailto:jiangisright@gmail.com">jiangisright@gmail.com</a>.</p>
+          <p>If you voluntarily email the developer, the developer receives your email address, message, and any attachments you choose to provide, and uses them to handle your request. This correspondence is separate from automatic app data collection and is processed through the email service. It is retained as needed to address the inquiry and meet applicable retention obligations. You may request deletion of this correspondence; independent email providers may retain information under their own policies.</p>
+        </section>
+
+        <section>
+          <h2>8. Policy changes</h2>
+          <p>This policy may be updated if the app’s behavior or applicable requirements change. The date at the top identifies this revision. Material changes will be reflected in this policy and the app or store listing when required.</p>
+        </section>
+      </main>
+      <footer>One-tap Shutdown · Privacy policy · MRongM</footer>
+    </div>
+  </body>
+</html>
