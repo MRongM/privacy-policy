@@ -6,6 +6,8 @@ Static privacy policies and related legal documents published by MRongM at [priv
 
 | Application | Document | Language | Public URL |
 | --- | --- | --- | --- |
+| CycleLedger | Privacy Policy | English | [https://privacy-policy.328064.xyz/cycleledger/](https://privacy-policy.328064.xyz/cycleledger/) |
+| CycleLedger | Privacy Policy | 简体中文 | [https://privacy-policy.328064.xyz/cycleledger/zh-cn.html](https://privacy-policy.328064.xyz/cycleledger/zh-cn.html) |
 | Hourly Chime / 整点报时 | Privacy Policy | English | [https://privacy-policy.328064.xyz/timekeeper/](https://privacy-policy.328064.xyz/timekeeper/) |
 | Hourly Chime / 整点报时 | Privacy Policy | 简体中文 | [https://privacy-policy.328064.xyz/timekeeper/zh-cn.html](https://privacy-policy.328064.xyz/timekeeper/zh-cn.html) |
 | Hobgoblin Android | Privacy Policy | English | [https://privacy-policy.328064.xyz/hobgoblin/](https://privacy-policy.328064.xyz/hobgoblin/) |
