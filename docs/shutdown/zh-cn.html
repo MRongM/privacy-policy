@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="一键关机 · 隐私政策 · MRongM · 2026-10-13" />
+    <meta name="description" content="一键关机 · 隐私政策 · MRongM · 2026-10-28" />
     <title>一键关机 · 隐私政策</title>
     <link rel="canonical" href="https://privacy-policy.328064.xyz/shutdown/zh-cn.html" />
     <link rel="alternate" hreflang="en" href="https://privacy-policy.328064.xyz/shutdown/" />
@@ -24,45 +24,50 @@
         </nav>
       </header>
       <main id="policy">
-        <p class="meta"><strong>生效及最后更新日期:</strong> 2026-10-13 · <strong>开发者:</strong> MRongM</p>
+        <p class="meta"><strong>生效及最后更新日期:</strong> 2026-10-28 · <strong>开发者:</strong> MRongM</p>
 
         <section>
           <h2>1. 适用范围与应用用途</h2>
           <p>本政策适用于由 <strong>MRongM</strong> 发布的 <strong>一键关机 / One-tap Shutdown</strong> Android 应用，软件包名为 <code>com.mrongm.shutdown</code>。本政策说明应用行为、本地技术信息，以及使用外部网站或联系开发者时产生的独立信息处理。</p>
-          <p>本应用提供关机和重启按钮。只有在您通过 Shizuku 授权本应用并明确选择电源操作后，应用才会通过本地服务立即执行对应操作。手机原有电源键和系统电源菜单仍可正常使用。</p>
+          <p>1.1 及更早版本提供关机和重启按钮。只有在您通过 Shizuku 授权本应用并明确选择电源操作后，应用才会通过本地服务立即执行对应操作。手机原有电源键和系统电源菜单仍可正常使用。</p>
+        </section>
+
+        <section>
+          <h2>电源菜单 1.2 与无障碍服务</h2>
+          <p>从 1.2 版本起，电源菜单仅在您主动操作时打开 Android 系统电源菜单，由您在系统菜单中选择关机或重启。应用使用无障碍服务，该服务会收到窗口变化事件但会忽略它们，不读取屏幕内容，也不收集、存储、传输或分享个人数据。应用会在打开无障碍设置前展示说明并征求您的同意；您可以在系统设置中关闭该服务。</p>
         </section>
 
         <section>
           <h2>2. 数据访问、收集与分享</h2>
           <p>本应用的应用功能不收集、上传、出售或分享个人数据。应用没有账号、广告、应用内购买、分析 SDK、远程崩溃上报或应用后台数据库，不访问联系人、照片、短信、设备位置或广告标识符。</p>
-          <p>应用不请求网络、存储或无障碍权限。应用只检查指定的 Shizuku 软件包 <code>moe.shizuku.privileged.api</code> 是否已安装，并读取本地授权与服务连接状态。这种精确软件包查询不等于扫描、收集或上传已安装应用清单。</p>
+          <p>1.1 及更早版本不请求网络、存储或无障碍权限。应用只检查指定的 Shizuku 软件包 <code>moe.shizuku.privileged.api</code> 是否已安装，并读取本地授权与服务连接状态。这种精确软件包查询不等于扫描、收集或上传已安装应用清单。</p>
           <p>一键关机是通过 Google Play 提供的付费应用。商店购买由 Google Play 按其自身条款与隐私实践处理；本应用本身不会收到您的银行卡号或支付详情，也没有应用内购买或支付 SDK。</p>
         </section>
 
         <section>
           <h2>3. 本地授权与电源命令</h2>
-          <p>购买本应用不会授予 Android 或 Shizuku 权限，也不会安装或激活 Shizuku。您仍需单独完成安装、激活与授权步骤。</p>
-          <p>Shizuku 是您另行安装和激活的应用。Shizuku 授权提供以 root 或 Android shell 身份进行特权本地执行的能力。本应用的实现仅将该能力用于固定的关机和重启操作，不访问您的联系人、照片或位置。服务验证自身以 root（UID 0）或 Android shell（UID 2000）身份运行后，执行您选择的固定关机或重启命令。本应用不提供任意用户输入命令功能。</p>
-          <p>非 root 设备每次开机后都需要通过电脑 ADB 或手机无线调试重新激活 Shizuku；激活成功后可断开 USB 连接。已 root 的设备可使用 root 启动 Shizuku。激活、调试与 Shizuku 自身权限由 Android 和 Shizuku 管理。</p>
+          <p>购买本应用不会授予 Android 或 Shizuku 权限，也不会安装或激活 Shizuku。使用 1.1 及更早版本时，您仍需单独完成 Shizuku 的安装、激活与授权步骤。</p>
+          <p>在 1.1 及更早版本中，Shizuku 是您另行安装和激活的应用。Shizuku 授权提供以 root 或 Android shell 身份进行特权本地执行的能力。本应用的实现仅将该能力用于固定的关机和重启操作，不访问您的联系人、照片或位置。服务验证自身以 root（UID 0）或 Android shell（UID 2000）身份运行后，执行您选择的固定关机或重启命令。本应用不提供任意用户输入命令功能。</p>
+          <p>使用 1.1 及更早版本时，非 root 设备每次开机后都需要通过电脑 ADB 或手机无线调试重新激活 Shizuku；激活成功后可断开 USB 连接。已 root 的设备可使用 root 启动 Shizuku。激活、调试与 Shizuku 自身权限由 Android 和 Shizuku 管理。</p>
         </section>
 
         <section>
           <h2>4. 本地信息、留存与删除</h2>
           <p>技术状态、选定的电源操作、服务 UID 和错误详情可能出现在 Android 本地诊断日志或应用错误提示中。本应用不将这些诊断信息发送到服务器，也不建立独立的用户数据库。系统日志的访问、留存和清理由 Android 管理。应用语言偏好由 Android 保存，本应用不会上传该偏好。</p>
-          <p>您可以在 Shizuku 中撤销本应用的授权。卸载应用会按 Android 通常的应用移除行为清理应用自身的本地状态；系统保存的偏好和诊断信息由 Android 管理。卸载本应用不会卸载 Shizuku、撤销其他应用获得的权限，或删除独立服务已保存的信息。</p>
+          <p>您可以在 Android 设置中关闭 1.2 版本的无障碍服务，或在 Shizuku 中撤销旧版本的授权。卸载应用会按 Android 通常的应用移除行为清理应用自身的本地状态；系统保存的偏好和诊断信息由 Android 管理。卸载本应用不会卸载 Shizuku、撤销其他应用获得的权限，或删除独立服务已保存的信息。</p>
           <p>本应用没有可删除的账号或服务端个人数据库。支持邮件的删除请求请参阅第 7 节。</p>
         </section>
 
         <section>
           <h2>5. Shizuku、外部链接与本政策网站</h2>
           <p>Shizuku 有独立的行为、授权记录和隐私实践。安装或激活前，请参阅其<a href="https://shizuku.rikka.app/">官方网站与文档</a>。MRongM 不控制 Shizuku 独立处理数据的行为。</p>
-          <p>应用的 Shizuku 下载链接会在外部浏览器中打开。访问下载网站或本政策页面时，浏览器、网站及托管服务可能按各自的实践处理通常的网络连接信息，例如 IP 地址、请求路径和请求时间。本政策网站使用 GitHub Pages 托管。网站托管日志与应用遥测是独立事项；本应用本身不会向本网站上传诊断日志或个人数据。</p>
+          <p>1.1 及更早版本的 Shizuku 下载链接会在外部浏览器中打开。访问下载网站或本政策页面时，浏览器、网站及托管服务可能按各自的实践处理通常的网络连接信息，例如 IP 地址、请求路径和请求时间。本政策网站使用 GitHub Pages 托管。网站托管日志与应用遥测是独立事项；本应用本身不会向本网站上传诊断日志或个人数据。</p>
           <p>本应用没有内嵌浏览器，也不会在下载链接中附加跟踪参数。外部浏览器、Android、Shizuku 和托管服务的行为以各自提供方的实践为准。</p>
         </section>
 
         <section>
           <h2>6. 安全</h2>
-          <p>电源操作在您的设备本地执行，并且需要 Shizuku 授权。由于操作可立即关机或重启，请仅在确有意图时使用，并及时更新 Android 和 Shizuku。本地诊断信息受 Android 的保护机制约束。任何设备或软件环境都无法保证绝对安全。</p>
+          <p>1.1 及更早版本的电源操作在设备本地执行，并且需要 Shizuku 授权。由于操作可立即关机或重启，请仅在确有意图时使用，并及时更新 Android 和 Shizuku。本地诊断信息受 Android 的保护机制约束。任何设备或软件环境都无法保证绝对安全。</p>
         </section>
 
         <section>
