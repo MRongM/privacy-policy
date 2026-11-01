@@ -6,6 +6,7 @@ Static privacy policies and related legal documents published by MRongM at [priv
 
 | Application | Document | Language | Public URL |
 | --- | --- | --- | --- |
+| Toybox Battle | Privacy Policy | English | [https://privacy-policy.328064.xyz/toybox/](https://privacy-policy.328064.xyz/toybox/) |
 | CycleLedger | Privacy Policy | English | [https://privacy-policy.328064.xyz/cycleledger/](https://privacy-policy.328064.xyz/cycleledger/) |
 | CycleLedger | Privacy Policy | 简体中文 | [https://privacy-policy.328064.xyz/cycleledger/zh-cn.html](https://privacy-policy.328064.xyz/cycleledger/zh-cn.html) |
 | TaskChime / 念事 | Privacy Policy | English / 简体中文 | [https://privacy-policy.328064.xyz/taskchime/](https://privacy-policy.328064.xyz/taskchime/) / [中文](https://privacy-policy.328064.xyz/taskchime/zh-cn.html) |
