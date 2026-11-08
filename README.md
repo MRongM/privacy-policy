@@ -6,6 +6,7 @@ Static privacy policies and related legal documents published by MRongM at [priv
 
 | Application | Document | Language | Public URL |
 | --- | --- | --- | --- |
+| Love Rescue / 恋爱营救 | Privacy Policy | English | [https://privacy-policy.328064.xyz/loverescue/](https://privacy-policy.328064.xyz/loverescue/) |
 | Critter Merge / 萌兽合合乐 | Privacy Policy | English / 简体中文 | [https://privacy-policy.328064.xyz/critter-merge/](https://privacy-policy.328064.xyz/critter-merge/) |
 | Toybox Battle | Privacy Policy | English | [https://privacy-policy.328064.xyz/toybox/](https://privacy-policy.328064.xyz/toybox/) |
 | CycleLedger | Privacy Policy | English | [https://privacy-policy.328064.xyz/cycleledger/](https://privacy-policy.328064.xyz/cycleledger/) |
